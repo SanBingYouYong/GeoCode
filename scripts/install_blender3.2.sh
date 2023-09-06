@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir ~/Blender
 cd ~/Blender
 wget https://mirror.freedif.org/blender/release/Blender3.2/blender-3.2.0-linux-x64.tar.xz
