@@ -32,7 +32,7 @@ class Decoder(nn.Module):
             self.bn7 = nn.InstanceNorm1d(self.linear_out_features_2)
         self.dp2 = nn.Dropout(p=0.5)  # args.dropout
 
-        self.linear3 = nn.Linear(self.linear_out_features_2, output_channels)
+        self.linear3 = nn.Linear(self.linear_out_features_2, output_channels)  # NOTE: output_channels decides the length of output for decoder instances
 
 
     def forward(self, x):
@@ -68,7 +68,7 @@ class DecodersNet(nn.Module):
             use_regression = False
             if regression_params:
                 use_regression = regression_params[i]
-            fan_out_list.append(Decoder(self.emb_dims, param_output_channels, increase_network_size, self.bn, use_regression))
+            fan_out_list.append(Decoder(self.emb_dims, param_output_channels, increase_network_size, self.bn, use_regression))  # initialize an array of decoders
         self.fan_out = nn.ModuleList(fan_out_list)
         self.initialize_weights(self)
 
