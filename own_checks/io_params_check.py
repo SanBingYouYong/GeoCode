@@ -36,8 +36,21 @@ def get_model_outputs():
             print("Error reading YAML file:", e)
     return param_names
 
+def params_name_set(params):
+    param_names = set()
+    for param in params:
+        param_names.add(param)
+    return param_names
 
 input_params = get_node_tree_inputs()
 output_params = get_model_outputs()
-print(len(input_params))
-print(len(output_params))
+
+input_names = params_name_set(input_params)
+output_names = params_name_set(output_params)
+print(input_names == output_names)
+
+input_names_not_in_model_output = [name for name in input_names if name not in output_names]
+print(input_names_not_in_model_output)
+output_names_not_used_in_nodetree = [name for name in output_names if name not in input_names]
+print(output_names_not_used_in_nodetree)
+
