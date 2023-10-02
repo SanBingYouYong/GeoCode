@@ -9,7 +9,7 @@ channels:
   - iopath
   - pytorch3d
 dependencies:
-  - python=3.8
+  - python=3.10
   - pytorch=1.10.2
   - torchvision
   - numpy=1.21.2
