@@ -7,17 +7,34 @@ import importlib
 
 from bpy.types import Context
 
-import sys
-sys.path.append("/media/sanbingyouyong/Ray/Projects/Research/ProceduralModeling/ASU/GeoCode/own_checks/interface")
-from ui_external import resize_and_convert
+# from pathlib import Path
+# def import_parents(level=1):
+#     global __package__
+#     file = Path(__file__).resolve()
+#     parent, top = file.parent, file.parents[level]
+#     sys.path.append(str(top))
+#     try:
+#         sys.path.remove(str(parent))
+#     except ValueError:
+#         pass
+#     __package__ = '.'.join(parent.parts[len(top.parts):])
+#     importlib.import_module(__package__)
+# import_parents(level=1)
 
-'''
-Template for getting started with a Blender interface quickly. 
-Bind methods to those `execute` methods. 
-Remember to replace Blender's default python directory. 
-    e.g. remove built-in python folder, start blender with conda env activated (python path overwrite). 
-        or modify default python path manually. 
-'''
+from PIL import Image
+
+def resize_and_convert(img_path: str) -> None:
+    # Open an image
+    image = Image.open(img_path)
+    # Resize the image (e.g., to 300x300 pixels)
+    resized_image = image.resize((224, 224))
+    # Convert the image to grayscale
+    grayscale_image = resized_image.convert('L')
+    # Save the grayscale image
+    grayscale_image.save(img_path)
+    print(f"PIL saved img to {img_path}")
+
+
 
 
 class CaptureAnnotationOperator(bpy.types.Operator):
@@ -67,7 +84,7 @@ def register():
     bpy.types.Scene.annotation_image_path = bpy.props.StringProperty(
         name="Annotation Image Path Property", 
         subtype='FILE_PATH',
-        default="//annotation_image"
+        default="//annotation_image.png"
     )
     
     bpy.utils.register_class(CaptureAnnotationOperator)
