@@ -16,7 +16,7 @@ from common.param_descriptors import ParamDescriptors
 from geocode_util import InputType, get_inputs_to_eval, calc_prediction_vector_size
 from geocode_model import Model
 from torch.utils.data import DataLoader
-from chamfer_distance import ChamferDistance as chamfer_dist
+# from chamfer_distance import ChamferDistance as chamfer_dist
 from common.sampling_util import sample_surface
 from common.file_util import load_obj, get_recipe_yml_obj
 from common.point_cloud_util import normalize_point_cloud
@@ -43,24 +43,24 @@ def sample_pc_random(obj_path, num_points=10_000, apply_point_cloud_normalizatio
         return None
 
 
-def get_chamfer_distance(target_pc, gt_pc, device, num_points_in_pc, check_rot=False):
-    """
-    num_points_in_pc - for sanity check
-    check_rot - was done for the tables since they are symmetric, and sketches are randomly flipped
-                it is ok to leave it on for the vase and chair, just makes it slower
-    """
-    gt_pc = gt_pc.reshape(1, gt_pc.shape[0], gt_pc.shape[1])  # add batch dim
-    target_pc = target_pc.reshape(1, target_pc.shape[0], target_pc.shape[1])  # add batch dim
-    assert gt_pc.shape[1] == target_pc.shape[1] == num_points_in_pc, f"{gt_pc.shape[1]} == {target_pc.shape[1]} == {num_points_in_pc}"
-    dist1, dist2, idx1, idx2 = chamfer_dist()(target_pc.float().to(device), gt_pc.float().to(device))
-    chamfer_distance = (torch.sum(dist1) + torch.sum(dist2)) / (gt_pc.shape[1] * 2)
-    if check_rot:
-        rot_mat = torch.tensor([[0.0, 0.0, -1.0], [0.0, 1.0, 0.0], [1.0, 0.0, 0.0]], dtype=torch.float64)
-        target_pc_rot = torch.matmul(rot_mat, target_pc.squeeze().t()).t().unsqueeze(0)
-        dist1, dist2, idx1, idx2 = chamfer_dist()(target_pc_rot.float().to(device), gt_pc.float().to(device))
-        chamfer_distance_rot = (torch.sum(dist1) + torch.sum(dist2)) / (gt_pc.shape[1] * 2)
-        return torch.min(chamfer_distance, chamfer_distance_rot)
-    return chamfer_distance
+# def get_chamfer_distance(target_pc, gt_pc, device, num_points_in_pc, check_rot=False):
+#     """
+#     num_points_in_pc - for sanity check
+#     check_rot - was done for the tables since they are symmetric, and sketches are randomly flipped
+#                 it is ok to leave it on for the vase and chair, just makes it slower
+#     """
+#     gt_pc = gt_pc.reshape(1, gt_pc.shape[0], gt_pc.shape[1])  # add batch dim
+#     target_pc = target_pc.reshape(1, target_pc.shape[0], target_pc.shape[1])  # add batch dim
+#     assert gt_pc.shape[1] == target_pc.shape[1] == num_points_in_pc, f"{gt_pc.shape[1]} == {target_pc.shape[1]} == {num_points_in_pc}"
+#     dist1, dist2, idx1, idx2 = chamfer_dist()(target_pc.float().to(device), gt_pc.float().to(device))
+#     chamfer_distance = (torch.sum(dist1) + torch.sum(dist2)) / (gt_pc.shape[1] * 2)
+#     if check_rot:
+#         rot_mat = torch.tensor([[0.0, 0.0, -1.0], [0.0, 1.0, 0.0], [1.0, 0.0, 0.0]], dtype=torch.float64)
+#         target_pc_rot = torch.matmul(rot_mat, target_pc.squeeze().t()).t().unsqueeze(0)
+#         dist1, dist2, idx1, idx2 = chamfer_dist()(target_pc_rot.float().to(device), gt_pc.float().to(device))
+#         chamfer_distance_rot = (torch.sum(dist1) + torch.sum(dist2)) / (gt_pc.shape[1] * 2)
+#         return torch.min(chamfer_distance, chamfer_distance_rot)
+#     return chamfer_distance
 
 
 def save_as_obj_proc(pred_yml_file_path: Path, recipe_file_path: Path, results_dir: Path, out_dir: str, blender_exe: str, blend_file: str):
@@ -132,6 +132,7 @@ def test(opt):
     test_dataloaders_types = []
     # pc
     if InputType.pc in opt.input_type:
+        raise NotImplementedError("Chamfer Distance imports pytorch3d which is not compatible with 3.10")
         test_dataset_pc = DatasetPC(inputs_to_eval, device, param_descriptors_map,
                                     opt.dataset_dir, opt.phase, random_pc=opt.random_pc,
                                     gaussian=opt.gaussian, apply_point_cloud_normalization=opt.normalize_pc,
