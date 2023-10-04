@@ -16,6 +16,19 @@ from common.param_descriptors import ParamDescriptors
 from PIL import Image
 from torchvision.transforms import transforms
 
+
+def resize_and_convert(img_path: str) -> None:
+    # Open an image
+    image = Image.open(img_path)
+    # Resize the image (e.g., to 300x300 pixels)
+    resized_image = image.resize((224, 224))
+    # Convert the image to grayscale
+    grayscale_image = resized_image.convert('L')
+    # Save the grayscale image
+    grayscale_image.save(img_path)
+    print(f"PIL saved img to {img_path}")
+
+
 # Load the saved model checkpoint (replace 'path_to_checkpoint' with the actual path)
 checkpoint_path = './models/exp_geocode_chair/last.ckpt'
 
@@ -34,6 +47,7 @@ model.eval()
 # Load and preprocess your single input sketch image
 # Replace 'input_image' with your actual input data (e.g., image loading and preprocessing)
 input_image = "./blends/annotation_image.png"
+resize_and_convert(input_image)
 
 # Process the input image (sketch) as needed
 input_data = Image.open(input_image)

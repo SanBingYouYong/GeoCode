@@ -1,14 +1,14 @@
-back_frame_mid_y_offset_pct: 0.0
+back_frame_mid_y_offset_pct: 0.2
 back_frame_top_y_offset_pct: 0.0
 back_leg_bottom_y_offset_pct: 0.0
 back_leg_mid_y_offset_pct: 0.0
 bevel_rails: 0.5
-cr_count: 7
+cr_count: -1
 cr_offset_bottom: 0.2357142857142857
 cr_offset_top: 0.9500000000000002
 cr_scale_y: 1.1999999999999997
 cr_scale_z: 0.3
-cr_shape_1: 1.0
+cr_shape_1: -1.0
 curvature: 1.0
 handles_base_pos_z_pct: -1.0
 handles_bottom_pos_along_seat_pct: -1.0
