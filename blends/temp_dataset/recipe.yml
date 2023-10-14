@@ -1,0 +1,529 @@
+base:
+  scale:
+    x: 1.5
+    y: 0.5932999849319458
+    z: 1.0
+  bevel_rails: 1.0
+  pillow_state: 1
+  pillow_fill_edge: 1
+  seat_shape: 0.25
+  seat_pos: 0.48947370052337646
+  cr_count: 7
+  cr_scale_y: 0.7333
+  cr_scale_z: 0.98
+  cr_offset_bottom: 0.4071
+  cr_offset_top: 0.7786
+  cr_shape_1: 0.0
+  curvature: 0.25
+  is_top_rail: 1
+  tr_fill_edge: 0
+  tr_scale_y: 0.5
+  tr_scale_z: 1.5
+  tr_shape_1: 0.25
+  is_vertical_rail: 1
+  vr_count: 8
+  vr_scale_x: 0.3
+  vr_scale_y: 0.2
+  vr_shape_1: 0.4
+  is_back_rest: 0
+  legs_shape_1: 1.0
+  legs_shape_2: 1.0
+  legs_bevel: 0.5
+  is_monoleg: 0
+  is_monoleg_tent: 0
+  monoleg_tent_pct: 0.4
+  monoleg_tent_count: 4
+  monoleg_bezier_start_x_offset: 0.0
+  monoleg_bezier_start_handle_x_offset: 0.0
+  monoleg_bezier_start_handle_z_pct: 0.4
+  monoleg_bezier_end_x_offset: 0.8199999332427979
+  monoleg_bezier_end_handle_x_offset: 0.4
+  monoleg_bezier_end_handle_z_pct: 1.0
+  back_frame_top_y_offset_pct: 1.0
+  back_frame_mid_y_offset_pct: 0.5400000214576721
+  back_leg_bottom_y_offset_pct: 0.0
+  back_leg_mid_y_offset_pct: 1.0
+  handles_state: 1
+  is_handles_support: 1
+  is_handles_cusion: 1
+  handles_base_pos_z_pct: 0.15
+  handles_mid_pos_x_pct: 0.5
+  handles_mid_pos_y_pct: 0.42329999804496765
+  handles_mid_pos_z_pct: 0.5
+  handles_edge_pos_x_pct: 1.0
+  handles_bottom_pos_along_seat_pct: 0.4
+  handles_profile_width: 0.9
+  handles_profile_height: 0.9
+  handles_support_mid_x: 0.5800000429153442
+  handles_support_mid_y: 0.0
+  handles_support_top_pos: 0.5
+  handles_support_thickness: 0.8167
+  handles_cusion_cover_pct: 1.0
+dataset_generation:
+  scale:
+    x:
+      min: 0.5
+      max: 2.0
+      samples: 10
+    y:
+      min: 0.5
+      max: 2.0
+      samples: 10
+    z:
+      min: 0.5
+      max: 2.0
+      samples: 10
+  bevel_rails:
+    min: 0.0
+    max: 1.0
+    samples: 3
+  pillow_state:
+    min: 0
+    max: 2
+  pillow_fill_edge:
+    min: 0
+    max: 1
+  seat_shape:
+    min: 0.0
+    max: 1.0
+    samples: 5
+  seat_pos:
+    min: 0.2
+    max: 1.0
+    samples: 9
+  cr_count:
+    min: 3
+    max: 8
+  cr_scale_y:
+    min: 0.5
+    max: 1.2
+    samples: 4
+  cr_scale_z:
+    min: 0.3
+    max: 2.0
+    samples: 6
+  cr_offset_bottom:
+    min: 0.15
+    max: 0.75
+    samples: 8
+  cr_offset_top:
+    min: 0.35
+    max: 0.95
+    samples: 8
+  cr_shape_1:
+    min: 0.0
+    max: 2.0
+    samples: 7
+  curvature:
+    min: 0.0
+    max: 1.0
+    samples: 5
+  is_top_rail:
+    min: 0
+    max: 1
+  tr_fill_edge:
+    min: 0
+    max: 1
+  tr_scale_y:
+    min: 0.5
+    max: 1.2
+    samples: 5
+  tr_scale_z:
+    min: 0.5
+    max: 1.5
+    samples: 5
+  tr_shape_1:
+    min: 0.0
+    max: 1.0
+    samples: 5
+  is_vertical_rail:
+    min: 0
+    max: 1
+  vr_count:
+    min: 3
+    max: 8
+  vr_scale_x:
+    min: 0.3
+    max: 2.0
+    samples: 6
+  vr_scale_y:
+    min: 0.2
+    max: 1.0
+    samples: 4
+  vr_shape_1:
+    min: 0.0
+    max: 0.4
+    samples: 5
+  is_back_rest:
+    min: 0
+    max: 1
+  legs_shape_1:
+    min: 0.0
+    max: 1.0
+    samples: 3
+  legs_shape_2:
+    min: 0.0
+    max: 1.0
+    samples: 3
+  legs_bevel:
+    min: 0.0
+    max: 1.0
+    samples: 3
+  is_monoleg:
+    min: 0
+    max: 1
+  is_monoleg_tent:
+    min: 0
+    max: 1
+  monoleg_tent_pct:
+    min: 0.2
+    max: 0.8
+    samples: 7
+  monoleg_tent_count:
+    min: 3
+    max: 8
+  monoleg_bezier_start_x_offset:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  monoleg_bezier_start_handle_x_offset:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  monoleg_bezier_start_handle_z_pct:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  monoleg_bezier_end_x_offset:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  monoleg_bezier_end_handle_x_offset:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  monoleg_bezier_end_handle_z_pct:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  back_frame_top_y_offset_pct:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  back_frame_mid_y_offset_pct:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  back_leg_bottom_y_offset_pct:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  back_leg_mid_y_offset_pct:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  handles_state:
+    min: 0
+    max: 2
+  is_handles_support:
+    min: 0
+    max: 1
+  is_handles_cusion:
+    min: 0
+    max: 1
+  handles_profile_width:
+    min: 0.5
+    max: 1.0
+    samples: 6
+  handles_profile_height:
+    min: 0.5
+    max: 1.0
+    samples: 6
+  handles_base_pos_z_pct:
+    min: 0.15
+    max: 0.8
+    samples: 8
+  handles_mid_pos_x_pct:
+    min: 0.0
+    max: 1.0
+    samples: 7
+  handles_mid_pos_y_pct:
+    min: 0.1
+    max: 0.9
+    samples: 7
+  handles_mid_pos_z_pct:
+    min: 0.0
+    max: 1.0
+    samples: 7
+  handles_edge_pos_x_pct:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  handles_bottom_pos_along_seat_pct:
+    min: 0.3
+    max: 0.9
+    samples: 7
+  handles_support_mid_x:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  handles_support_mid_y:
+    min: 0.0
+    max: 1.0
+    samples: 6
+  handles_support_top_pos:
+    min: 0.3
+    max: 0.9
+    samples: 7
+  handles_support_thickness:
+    min: 0.4
+    max: 0.9
+    samples: 7
+  handles_cusion_cover_pct:
+    min: 0.0
+    max: 1.0
+    samples: 6
+constraints:
+  rule1: cr_offset_top - cr_offset_bottom >= 0.1
+  rule2: monoleg_bezier_end_x_offset >= monoleg_bezier_start_x_offset
+visibility_conditions:
+  bevel_rails: ( not is_back_rest )
+  cr_: ( not is_back_rest ) and ( not is_top_rail or not is_vertical_rail )
+  vr_: ( not is_back_rest ) and is_top_rail and is_vertical_rail
+  tr_: is_top_rail
+  is_vertical_rail: ( not is_back_rest ) and ( is_top_rail )
+  legs_shape_: ( is_monoleg and is_monoleg_tent ) or ( not is_monoleg )
+  is_monoleg_tent: is_monoleg
+  monoleg_tent_pct: is_monoleg and is_monoleg_tent
+  monoleg_tent_count: is_monoleg and is_monoleg_tent
+  monoleg_bezier: is_monoleg
+  pillow_fill_edge: pillow_state > 0
+  back_leg_: ( not is_monoleg )
+  is_handles_support: handles_state == 1
+  handles_support_: ( handles_state == 1 ) and ( is_handles_support )
+  is_handles_cusion: handles_state > 0
+  handles_cusion_cover_pct: ( handles_state > 0 ) and ( is_handles_cusion )
+  handles_profile_: handles_state > 0
+  handles_base_: handles_state > 0
+  handles_mid_: handles_state > 0
+  handles_edge_: handles_state == 1
+  handles_bottom_pos_along_seat_pct: ( handles_state == 2 ) or ( handles_state == 1 and is_handles_support == 1 )
+camera_angles_train:
+- - -30.0
+  - 35.0
+- - -30.0
+  - 55.0
+camera_angles_test:
+- - -30.0
+  - 15.0
+data_types:
+  scale:
+    type: Vector
+    min: 0.5
+    max: 2.000000238418579
+  bevel_rails:
+    type: Float
+    min: 0.0
+    max: 1.0
+  pillow_state:
+    type: Integer
+    min: 0
+    max: 2
+  pillow_fill_edge:
+    type: Boolean
+  seat_shape:
+    type: Float
+    min: 0.0
+    max: 1.0
+  seat_pos:
+    type: Float
+    min: 0.20000000298023224
+    max: 1.0
+  cr_count:
+    type: Integer
+    min: 3
+    max: 10
+  cr_scale_y:
+    type: Float
+    min: 0.5
+    max: 1.2000000476837158
+  cr_scale_z:
+    type: Float
+    min: 0.30000001192092896
+    max: 2.0
+  cr_offset_bottom:
+    type: Float
+    min: 0.15000000596046448
+    max: 0.75
+  cr_offset_top:
+    type: Float
+    min: 0.3499999940395355
+    max: 0.949999988079071
+  cr_shape_1:
+    type: Float
+    min: 0.0
+    max: 2.0
+  curvature:
+    type: Float
+    min: 0.0
+    max: 1.0
+  is_top_rail:
+    type: Boolean
+  tr_fill_edge:
+    type: Boolean
+  tr_scale_y:
+    type: Float
+    min: 0.5
+    max: 1.2000000476837158
+  tr_scale_z:
+    type: Float
+    min: 0.5
+    max: 2.0
+  tr_shape_1:
+    type: Float
+    min: 0.0
+    max: 1.0
+  is_vertical_rail:
+    type: Boolean
+  vr_count:
+    type: Integer
+    min: 3
+    max: 10
+  vr_scale_x:
+    type: Float
+    min: 0.30000001192092896
+    max: 2.0
+  vr_scale_y:
+    type: Float
+    min: 0.20000000298023224
+    max: 1.0
+  vr_shape_1:
+    type: Float
+    min: 0.0
+    max: 0.4000000059604645
+  is_back_rest:
+    type: Boolean
+  legs_shape_1:
+    type: Float
+    min: 0.0
+    max: 1.0
+  legs_shape_2:
+    type: Float
+    min: 0.0
+    max: 1.0
+  legs_bevel:
+    type: Float
+    min: 0.0
+    max: 1.0
+  is_monoleg:
+    type: Boolean
+  is_monoleg_tent:
+    type: Boolean
+  monoleg_tent_pct:
+    type: Float
+    min: 0.20000000298023224
+    max: 0.800000011920929
+  monoleg_tent_count:
+    type: Integer
+    min: 3
+    max: 8
+  monoleg_bezier_start_x_offset:
+    type: Float
+    min: 0.0
+    max: 1.0
+  monoleg_bezier_start_handle_x_offset:
+    type: Float
+    min: 0.0
+    max: 1.0
+  monoleg_bezier_start_handle_z_pct:
+    type: Float
+    min: 0.0
+    max: 1.0
+  monoleg_bezier_end_x_offset:
+    type: Float
+    min: 0.0
+    max: 1.0
+  monoleg_bezier_end_handle_x_offset:
+    type: Float
+    min: 0.0
+    max: 1.0
+  monoleg_bezier_end_handle_z_pct:
+    type: Float
+    min: 0.0
+    max: 1.0
+  back_frame_top_y_offset_pct:
+    type: Float
+    min: 0.0
+    max: 1.0
+  back_frame_mid_y_offset_pct:
+    type: Float
+    min: 0.0
+    max: 1.0
+  back_leg_bottom_y_offset_pct:
+    type: Float
+    min: 0.0
+    max: 1.0
+  back_leg_mid_y_offset_pct:
+    type: Float
+    min: 0.0
+    max: 1.0
+  handles_state:
+    type: Integer
+    min: 0
+    max: 2
+  is_handles_support:
+    type: Boolean
+  is_handles_cusion:
+    type: Boolean
+  handles_base_pos_z_pct:
+    type: Float
+    min: 0.0
+    max: 0.800000011920929
+  handles_mid_pos_x_pct:
+    type: Float
+    min: 0.0
+    max: 1.0
+  handles_mid_pos_y_pct:
+    type: Float
+    min: 0.10000000149011612
+    max: 0.8999999761581421
+  handles_mid_pos_z_pct:
+    type: Float
+    min: 0.0
+    max: 1.0
+  handles_edge_pos_x_pct:
+    type: Float
+    min: 0.0
+    max: 1.0
+  handles_bottom_pos_along_seat_pct:
+    type: Float
+    min: 0.30000001192092896
+    max: 0.8999999761581421
+  handles_profile_width:
+    type: Float
+    min: 0.5
+    max: 1.0
+  handles_profile_height:
+    type: Float
+    min: 0.5
+    max: 1.0
+  handles_support_mid_x:
+    type: Float
+    min: 0.0
+    max: 1.0
+  handles_support_mid_y:
+    type: Float
+    min: 0.0
+    max: 1.0
+  handles_support_top_pos:
+    type: Float
+    min: 0.30000001192092896
+    max: 0.8999999761581421
+  handles_support_thickness:
+    type: Float
+    min: 0.4000000059604645
+    max: 0.8999999761581421
+  handles_cusion_cover_pct:
+    type: Float
+    min: 0.0
+    max: 1.0
