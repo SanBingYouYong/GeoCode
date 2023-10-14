@@ -16,6 +16,10 @@ from common.param_descriptors import ParamDescriptors
 from PIL import Image
 from torchvision.transforms import transforms
 
+from data.dataset_sketch import DatasetSketch
+from torch.utils.data import DataLoader
+import pytorch_lightning as pl
+
 
 def resize_and_convert(img_path: str) -> None:
     # Open an image
@@ -34,45 +38,35 @@ checkpoint_path = './models/exp_geocode_chair/last.ckpt'
 
 recipe_yml_obj = get_recipe_yml_obj("./datasets/ChairDataset/recipe.yml")
 inputs_to_eval = get_inputs_to_eval(recipe_yml_obj)
+
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+camera_angles_to_process = recipe_yml_obj['camera_angles_train'] + recipe_yml_obj['camera_angles_test']
+camera_angles_to_process = [f'{a}_{b}' for a, b in camera_angles_to_process]
+
 param_descriptors = ParamDescriptors(recipe_yml_obj, inputs_to_eval, use_regression=False)
 param_descriptors_map = param_descriptors.get_param_descriptors_map()
 detailed_vec_size = calc_prediction_vector_size(param_descriptors_map)
 print(f"Prediction vector length is set to [{sum(detailed_vec_size)}]")
-model = Model.load_from_checkpoint( checkpoint_path, batch_size=1,
-                                    param_descriptors=param_descriptors, results_dir="./blends/outs",
-                                    test_dir="./datasets/temp", models_dir="./models",
-                                    test_dataloaders_types=["sketch"], test_input_type="sketch",
-                                    exp_name="temp")
 
-# Set the model to evaluation mode
-model.eval()
 
-# Load and preprocess your single input sketch image
-# Replace 'input_image' with your actual input data (e.g., image loading and preprocessing)
-input_image = "./blends/annotation_image.png"
-resize_and_convert(input_image)
+batch_size = 1
+test_dataloaders = []
+test_dataloaders_types = []
+test_dataset_sketch = DatasetSketch(inputs_to_eval, param_descriptors_map,
+                                    camera_angles_to_process, False,
+                                    "./blends/temp_dataset/", "test")
+test_dataloader_sketch = DataLoader(test_dataset_sketch, batch_size=batch_size, shuffle=False,
+                                    num_workers=1, prefetch_factor=1)
+# print(len(test_dataset_sketch))
+# raise
+test_dataloaders.append(test_dataloader_sketch)
+test_dataloaders_types.append('sketch')
 
-# Process the input image (sketch) as needed
-input_data = Image.open(input_image)
-preprocess = transforms.Compose([
-    transforms.Resize((224, 224)),
-    transforms.ToTensor()
-])
-input_data = preprocess(input_data).unsqueeze(0)  # Add batch dimension
+pl_model = Model.load_from_checkpoint(  checkpoint_path, batch_size=1,
+                                        param_descriptors=param_descriptors, results_dir="/blends/outs",
+                                        test_dir="./datasets/temp", models_dir="./models",
+                                        test_dataloaders_types=test_dataloaders_types, test_input_type="sketch",
+                                        exp_name="temp")
 
-# Pass the input data through the VGG model
-sketch_emb = model.vgg(input_data)
-
-# Decode and get predictions for the sketch
-with torch.no_grad():
-    pred_sketch = model.decoders_net.decode(sketch_emb)
-
-# Convert predictions to a map or other suitable format
-pred_map_sketch = model.param_descriptors.convert_prediction_vector_to_map(pred_sketch.cpu())
-
-# Save the prediction as a YAML file (replace 'output_path' with the desired path)
-output_path = './blends/inference_out.yml'
-with open(output_path, 'w') as yaml_file:
-    yaml.dump(pred_map_sketch, yaml_file)
-
-# The prediction is now saved in 'output_path' as a YAML file
+trainer = pl.Trainer(gpus=1)
+trainer.test(model=pl_model, dataloaders=test_dataloaders, ckpt_path=checkpoint_path)
