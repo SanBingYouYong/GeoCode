@@ -142,10 +142,12 @@ def resize_and_convert(img_path: str) -> None:
     image = Image.open(img_path)
     # Resize the image (e.g., to 300x300 pixels)
     resized_image = image.resize((224, 224))
-    # convert the image to black and white but leave channels
-    binarized_image = resized_image.convert('1')
+    # convert to grayscale and save as RGB
+    binarized_image = resized_image.convert('L')
     # invert the image
-    binarized_image = binarized_image.point(lambda x: 255 if x == 0 else 0, '1')
+    binarized_image = Image.eval(binarized_image, lambda x: 255 - x)
+    # convert back to RGB
+    binarized_image = binarized_image.convert('RGB')
     binarized_image.save(img_path)
     print(f"PIL saved img to {img_path}")
 
@@ -157,11 +159,11 @@ class CaptureAnnotationOperator(bpy.types.Operator):
     def execute(self, context: Context):
         print("You've called Capture Annotation & GeoCode Inference.")
         
-        # scene: bpy.types.Scene = context.scene
-        # img_path = "./datasets/SingleImg/test/sketches/single_img_-30.0_15.0.png"
-        # bpy.context.scene.render.filepath = img_path
-        # bpy.ops.render.opengl(write_still=True)
-        # resize_and_convert(img_path)
+        scene: bpy.types.Scene = context.scene
+        img_path = "./datasets/SingleImg/test/sketches/single_img_-30.0_15.0.png"
+        bpy.context.scene.render.filepath = img_path
+        bpy.ops.render.opengl(write_still=True)
+        resize_and_convert(img_path)
 
         gc_single_image_inference()
         recipe_file_path = "./datasets/SingleImg/recipe.yml"
