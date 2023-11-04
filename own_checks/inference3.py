@@ -113,6 +113,8 @@ def gc_single_image_inference(single_img_dataset_dir=SINGLE_IMAGE_DATASET_DIR, p
                                         test_dir=test_dir, models_dir=models_dir,
                                         test_dataloaders_types=test_dataloaders_types, test_input_type=[InputType.sketch],
                                         exp_name=exp_name)
+    # print model summary in human readable format
+    print(pl_model.summarize("full", 5))
 
     trainer = pl.Trainer(gpus=1)
     trainer.test(model=pl_model, dataloaders=test_dataloaders, ckpt_path=best_model_and_highest_epoch)
