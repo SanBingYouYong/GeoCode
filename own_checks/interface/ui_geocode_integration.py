@@ -73,9 +73,7 @@ def gc_single_image_inference(
     inputs_to_eval = get_inputs_to_eval(recipe_yml_obj)
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    camera_angles_to_process = (
-        recipe_yml_obj["camera_angles_train"] + recipe_yml_obj["camera_angles_test"]
-    )
+    camera_angles_to_process = recipe_yml_obj["camera_angles_test"]
     camera_angles_to_process = [f"{a}_{b}" for a, b in camera_angles_to_process]
 
     param_descriptors = ParamDescriptors(
