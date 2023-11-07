@@ -244,32 +244,6 @@ class ClearAllAnnotationOperator(bpy.types.Operator):
         for annotation_layer in scene.grease_pencil.layers:
             annotation_layer.clear()
         return {"FINISHED"}
-    
-def update_slider_value(self, context):
-    print("what")
-    print("slider value updated")
-    scene = context.scene
-    # print(scene.slider_value)
-    # update the z rotation of the bezier curve object "CameraTrack" accordingly
-    # obj = bpy.data.objects["CameraTrack"]
-    # obj.rotation_euler[2] = scene.slider_value
-    # print(f"New angle: {obj.rotation_euler[2]}")
-
-class ViewAngleChangeSliderOperator(bpy.types.Operator):
-    bl_idname = "object.view_angle_change_slider_operator"
-    bl_label = "View Angle Change Slider"
-
-    def execute(self, context: Context):
-        print("You've called View Angle Change Slider.")
-        scene = context.scene
-        bpy.types.Scene.slider_value = bpy.props.FloatProperty(
-            name="View Angle", 
-            default=0.0,
-            min=0.0,
-            max=90.0,
-            update=update_slider_value
-        )
-        return {"FINISHED"}
 
 
 class GeoCodeInterfacePanel(bpy.types.Panel):
@@ -284,10 +258,18 @@ class GeoCodeInterfacePanel(bpy.types.Panel):
         scene = context.scene
         # add elements to ui
         # layout.prop(scene, "annotation_image_path")
-        layout.prop(scene, "slider_value")
+        layout.prop(scene, "slider_value", text="View Angle")
         layout.operator("object.capture_annotation_operator")
         layout.operator("object.clear_all_annotation_operator")
         
+
+def update_slider_value(self, context):
+    print("slider value updated")
+    scene = context.scene
+    print(scene.slider_value)
+    # update z rotation of "CameraTrack" object accordingly
+    bpy.data.objects["CameraTrack"].rotation_euler[2] = scene.slider_value * 3.1415926 / 180.0
+    print("updated camera rotation")    
 
 
 def register():
@@ -297,9 +279,16 @@ def register():
     #     default="//datasets//SingleImg//test//sketches//single_img_-30.0_15.0.png"
     # )
 
+    bpy.types.Scene.slider_value = bpy.props.FloatProperty(
+            name="View Angle", 
+            default=0.0,
+            min=0.0,
+            max=90.0,
+            update=update_slider_value
+        )
+
     bpy.utils.register_class(CaptureAnnotationOperator)
     bpy.utils.register_class(ClearAllAnnotationOperator)
-    bpy.utils.register_class(ViewAngleChangeSliderOperator)
     bpy.utils.register_class(GeoCodeInterfacePanel)
 
 
@@ -308,7 +297,6 @@ def unregister():
 
     bpy.utils.unregister_class(CaptureAnnotationOperator)
     bpy.utils.unregister_class(ClearAllAnnotationOperator)
-    bpy.utils.unregister_class(ViewAngleChangeSliderOperator)
     bpy.utils.unregister_class(GeoCodeInterfacePanel)
 
 
