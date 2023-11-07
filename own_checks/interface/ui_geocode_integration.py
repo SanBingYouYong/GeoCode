@@ -261,15 +261,17 @@ class GeoCodeInterfacePanel(bpy.types.Panel):
         layout.prop(scene, "slider_value", text="View Angle")
         layout.operator("object.capture_annotation_operator")
         layout.operator("object.clear_all_annotation_operator")
-        
+
 
 def update_slider_value(self, context):
     print("slider value updated")
     scene = context.scene
     print(scene.slider_value)
     # update z rotation of "CameraTrack" object accordingly
-    bpy.data.objects["CameraTrack"].rotation_euler[2] = scene.slider_value * 3.1415926 / 180.0
-    print("updated camera rotation")    
+    bpy.data.objects["CameraTrack"].rotation_euler[2] = (
+        scene.slider_value * 3.1415926 / 180.0
+    )
+    print("updated camera rotation")
 
 
 def register():
@@ -280,12 +282,8 @@ def register():
     # )
 
     bpy.types.Scene.slider_value = bpy.props.FloatProperty(
-            name="View Angle", 
-            default=0.0,
-            min=0.0,
-            max=90.0,
-            update=update_slider_value
-        )
+        name="View Angle", default=0.0, min=0.0, max=90.0, update=update_slider_value
+    )
 
     bpy.utils.register_class(CaptureAnnotationOperator)
     bpy.utils.register_class(ClearAllAnnotationOperator)
