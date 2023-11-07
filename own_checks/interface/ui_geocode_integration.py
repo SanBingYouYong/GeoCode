@@ -215,6 +215,9 @@ class CaptureAnnotationOperator(bpy.types.Operator):
     def execute(self, context: Context):
         print("You've called Capture Annotation & GeoCode Inference.")
 
+        # hide "procedural shape"
+        bpy.data.objects["procedural shape"].hide_viewport = True
+
         scene: bpy.types.Scene = context.scene
         img_path = "./datasets/SingleImg/test/sketches/single_img_-30.0_15.0.png"
         bpy.context.scene.render.filepath = img_path
@@ -231,6 +234,9 @@ class CaptureAnnotationOperator(bpy.types.Operator):
         )  # this might be where denorm happens
         input_params_map = get_input_param_map(mod, recipe_yml)
         load_shape_from_yml(shape_yml_path, input_params_map)
+
+        # bring it back in
+        bpy.data.objects["procedural shape"].hide_viewport = False
         return {"FINISHED"}
 
 
