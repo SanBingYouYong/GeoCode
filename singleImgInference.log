@@ -1,0 +1,900 @@
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:Average inference time for [1] samples is [0.015]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9303,  ..., 1.9303, 1.9303, 1.9303],
+          [1.9303, 1.9157, 1.9303,  ..., 1.9157, 1.9157, 1.9157],
+          ...,
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9303]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.013]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.018]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9303,  ..., 1.9303, 1.9303, 1.9303],
+          [1.9303, 1.9157, 1.9303,  ..., 1.9157, 1.9157, 1.9157],
+          ...,
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9303]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.017]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.020]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmpqjkelrct
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmpqjkelrct/_remote_module_non_scriptable.py
+INFO:root:Average inference time for [1] samples is [1.154]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9303,  ..., 1.9303, 1.9303, 1.9303],
+          [1.9303, 1.9157, 1.9303,  ..., 1.9157, 1.9157, 1.9157],
+          ...,
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9303]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.018]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9303,  ..., 1.9303, 1.9303, 1.9303],
+          [1.9303, 1.9157, 1.9303,  ..., 1.9157, 1.9157, 1.9157],
+          ...,
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9303]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.020]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9303,  ..., 1.9303, 1.9303, 1.9303],
+          [1.9303, 1.9157, 1.9303,  ..., 1.9157, 1.9157, 1.9157],
+          ...,
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9303]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.017]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9303,  ..., 1.9303, 1.9303, 1.9303],
+          [1.9303, 1.9157, 1.9303,  ..., 1.9157, 1.9157, 1.9157],
+          ...,
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9303]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.016]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.018]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9303,  ..., 1.9303, 1.9303, 1.9303],
+          [1.9303, 1.9157, 1.9303,  ..., 1.9157, 1.9157, 1.9157],
+          ...,
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9303]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.019]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.021]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9303,  ..., 1.9303, 1.9303, 1.9303],
+          [1.9303, 1.9157, 1.9303,  ..., 1.9157, 1.9157, 1.9157],
+          ...,
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9303]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.022]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.016]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.015]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9303,  ..., 1.9303, 1.9303, 1.9303],
+          [1.9303, 1.9157, 1.9303,  ..., 1.9157, 1.9157, 1.9157],
+          ...,
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9303]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.015]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.017]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.014]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9303,  ..., 1.9303, 1.9303, 1.9303],
+          [1.9303, 1.9157, 1.9303,  ..., 1.9157, 1.9157, 1.9157],
+          ...,
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9303, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9303, 1.9303]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.022]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmppilmtoyk
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmppilmtoyk/_remote_module_non_scriptable.py
+INFO:root:Average inference time for [1] samples is [0.648]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.020]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.017]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.014]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.015]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.021]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.017]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.016]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:torch.distributed.nn.jit.instantiator:Created a temporary directory at /tmp/tmpocyam50q
+INFO:torch.distributed.nn.jit.instantiator:Writing /tmp/tmpocyam50q/_remote_module_non_scriptable.py
+INFO:root:Average inference time for [1] samples is [0.614]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.017]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.016]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.018]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.022]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.022]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.021]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.017]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.019]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy
+INFO:root:single_img_dataset_dir: ./datasets/SingleImg
+INFO:root:phase: test
+INFO:root:exp_name: exp_geocode_chair
+INFO:root:models_dir: ./models
+INFO:root:Prediction vector length is set to [364]
+INFO:root:Best model with highest epoch is [models/exp_geocode_chair/procedural_chair_epoch585.ckpt]
+INFO:root:len(dataloader): 1
+INFO:root:batch_idx: 0
+INFO:root:batch: [('single_img',), ('-30.0_15.0',), tensor([[[[1.9157, 1.9157, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9303,  ..., 1.9303, 1.9157, 1.9157],
+          [1.9157, 1.9157, 1.9157,  ..., 1.9303, 1.9157, 1.9303],
+          ...,
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157],
+          [1.9157, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9303],
+          [1.9303, 1.9303, 1.9157,  ..., 1.9157, 1.9157, 1.9157]]]]), tensor([[ 0.3333,  0.1111,  0.8889, -1.0000,  1.0000,  0.0000,  0.7500,  0.3750,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.2500,  0.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,
+         -1.0000,  1.0000,  0.0000,  0.0000,  0.5000,  0.0000, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000, -1.0000,  0.6000,
+          0.0000,  0.4000,  0.6000,  2.0000, -1.0000,  0.0000,  0.6000,  0.4000,
+          0.2857,  0.0000,  0.1666,  1.0000, -1.0000,  0.3333, -1.0000, -1.0000,
+         -1.0000, -1.0000, -1.0000]], dtype=torch.float64), {'back_frame_mid_y_offset_pct': tensor([0.], dtype=torch.float64), 'back_frame_top_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'back_leg_bottom_y_offset_pct': tensor([0.4000], dtype=torch.float64), 'back_leg_mid_y_offset_pct': tensor([0.6000], dtype=torch.float64), 'bevel_rails': tensor([-1]), 'cr_count': tensor([-1]), 'cr_offset_bottom': tensor([-1]), 'cr_offset_top': tensor([-1]), 'cr_scale_y': tensor([-1]), 'cr_scale_z': tensor([-1]), 'cr_shape_1': tensor([-1]), 'curvature': tensor([0.2500], dtype=torch.float64), 'handles_base_pos_z_pct': tensor([0.2857], dtype=torch.float64), 'handles_bottom_pos_along_seat_pct': tensor([0.3333], dtype=torch.float64), 'handles_cusion_cover_pct': tensor([-1]), 'handles_edge_pos_x_pct': tensor([-1]), 'handles_mid_pos_x_pct': tensor([0.], dtype=torch.float64), 'handles_mid_pos_y_pct': tensor([0.1666], dtype=torch.float64), 'handles_mid_pos_z_pct': tensor([1.], dtype=torch.float64), 'handles_profile_height': tensor([0.4000], dtype=torch.float64), 'handles_profile_width': tensor([0.6000], dtype=torch.float64), 'handles_state': tensor([2]), 'handles_support_mid_x': tensor([-1]), 'handles_support_mid_y': tensor([-1]), 'handles_support_thickness': tensor([-1]), 'handles_support_top_pos': tensor([-1]), 'is_back_rest': tensor([1]), 'is_handles_cusion': tensor([0]), 'is_handles_support': tensor([-1]), 'is_monoleg': tensor([0]), 'is_monoleg_tent': tensor([-1]), 'is_top_rail': tensor([0]), 'is_vertical_rail': tensor([-1]), 'legs_bevel': tensor([0.5000], dtype=torch.float64), 'legs_shape_1': tensor([0.], dtype=torch.float64), 'legs_shape_2': tensor([0.], dtype=torch.float64), 'monoleg_bezier_end_handle_x_offset': tensor([-1]), 'monoleg_bezier_end_handle_z_pct': tensor([-1]), 'monoleg_bezier_end_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_x_offset': tensor([-1]), 'monoleg_bezier_start_handle_z_pct': tensor([-1]), 'monoleg_bezier_start_x_offset': tensor([-1]), 'monoleg_tent_count': tensor([-1]), 'monoleg_tent_pct': tensor([-1]), 'pillow_fill_edge': tensor([0]), 'pillow_state': tensor([1]), 'scale': {'x': tensor([0.3333], dtype=torch.float64), 'y': tensor([0.1111], dtype=torch.float64), 'z': tensor([0.8889], dtype=torch.float64)}, 'seat_pos': tensor([0.3750], dtype=torch.float64), 'seat_shape': tensor([0.7500], dtype=torch.float64), 'tr_fill_edge': tensor([-1]), 'tr_scale_y': tensor([-1]), 'tr_scale_z': tensor([-1]), 'tr_shape_1': tensor([-1]), 'vr_count': tensor([-1]), 'vr_scale_x': tensor([-1]), 'vr_scale_y': tensor([-1]), 'vr_shape_1': tensor([-1])}]
+INFO:root:Average inference time for [1] samples is [0.025]
+INFO:root:Could not find barplot [models/exp_geocode_chair/val_barplot_top_1.json] skipping copy

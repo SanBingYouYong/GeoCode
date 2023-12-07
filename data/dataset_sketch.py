@@ -33,8 +33,16 @@ class DatasetSketch(data.Dataset):
         self.sketches_path = self.ds_path.joinpath("sketches")
         if not self.sketches_path.is_dir():
             raise Exception(f"Could not find a sketches in path [{self.sketches_path}]")
-        self.sketch_transforms = transforms.Compose([
+        if phase != "test":
+            print("adding augmentation to the sketches")
+            self.sketch_transforms = transforms.Compose([
             transforms.RandomHorizontalFlip(),
+            transforms.ToTensor(),
+            transforms.Normalize((0.48145466, 0.4578275, 0.40821073), (0.26862954, 0.26130258, 0.27577711)),
+            ])
+        else:  # disable augmentation for test phase to eliminate results oscillations
+            print("test phase, thus no random horizontal flip")
+            self.sketch_transforms = transforms.Compose([
             transforms.ToTensor(),
             transforms.Normalize((0.48145466, 0.4578275, 0.40821073), (0.26862954, 0.26130258, 0.27577711)),
             ])

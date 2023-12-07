@@ -25,6 +25,8 @@ from bpy.types import Context
 
 from PIL import Image
 
+sys.path.append("/media/sanbingyouyong/Ray/Projects/Research/ProceduralModeling/ASU/GeoCode/geocode/")
+
 from common.bpy_util import select_shape, get_geometric_nodes_modifier
 from common.input_param_map import get_input_param_map, load_shape_from_yml
 from common.file_util import get_recipe_yml_obj
@@ -46,6 +48,8 @@ from geocode.geocode_model import Model
 from torch.utils.data import DataLoader
 from common.file_util import get_recipe_yml_obj
 
+import logging
+
 
 # from inference3
 SINGLE_IMAGE_DATASET_DIR = "./datasets/SingleImg"
@@ -62,6 +66,12 @@ def gc_single_image_inference(
     exp_name=EXP_NAME,
     models_dir=MODELS_DIR,
 ):
+    logging.basicConfig(filename="singleImgInference.log", level=logging.INFO)
+    # print out debug info to check model input
+    logging.info(f"single_img_dataset_dir: {single_img_dataset_dir}")
+    logging.info(f"phase: {phase}")
+    logging.info(f"exp_name: {exp_name}")
+    logging.info(f"models_dir: {models_dir}")
     sys.path.append(
         "/media/sanbingyouyong/Ray/Projects/Research/ProceduralModeling/ASU/GeoCode/geocode/"
     )
@@ -81,7 +91,7 @@ def gc_single_image_inference(
     )
     param_descriptors_map = param_descriptors.get_param_descriptors_map()
     detailed_vec_size = calc_prediction_vector_size(param_descriptors_map)
-    print(f"Prediction vector length is set to [{sum(detailed_vec_size)}]")
+    logging.info(f"Prediction vector length is set to [{sum(detailed_vec_size)}]")
 
     # setup required dirs
     required_dirs = [
@@ -120,12 +130,12 @@ def gc_single_image_inference(
         if epoch > highest_epoch:
             best_model_and_highest_epoch = ckpt_file
             highest_epoch = epoch
-    print(f"Best model with highest epoch is [{best_model_and_highest_epoch}]")
+    logging.info(f"Best model with highest epoch is [{best_model_and_highest_epoch}]")
 
     batch_size = 1
     test_dataloaders = []
     test_dataloaders_types = []
-    test_dataset_sketch = DatasetSketch(
+    test_dataset_sketch = DatasetSketch(  # maybe this dataset is returning different things other than that one single image
         inputs_to_eval,
         param_descriptors_map,
         camera_angles_to_process,
@@ -142,6 +152,9 @@ def gc_single_image_inference(
     )
     test_dataloaders.append(test_dataloader_sketch)
     test_dataloaders_types.append("sketch")
+
+    # debug the dataset with loader
+    # checkDataset(test_dataloader_sketch)
 
     pl_model = Model.load_from_checkpoint(
         str(best_model_and_highest_epoch),
@@ -164,7 +177,7 @@ def gc_single_image_inference(
 
     # report average inference time
     avg_inference_time = pl_model.inference_time / pl_model.num_inferred_samples
-    print(
+    logging.info(
         f"Average inference time for [{pl_model.num_inferred_samples}] samples is [{avg_inference_time:.3f}]"
     )
 
@@ -175,7 +188,7 @@ def gc_single_image_inference(
             models_dir, exp_name, f"{barplot_type}_barplot_top_1.json"
         )
         if not barplot_json_path.is_file():
-            print(f"Could not find barplot [{barplot_json_path}] skipping copy")
+            logging.info(f"Could not find barplot [{barplot_json_path}] skipping copy")
             continue
         barplot_target_image_path = barplot_target_dir.joinpath(
             f"{barplot_type}_barplot.png"
@@ -189,6 +202,13 @@ def gc_single_image_inference(
         shutil.copy(
             barplot_json_path, barplot_target_dir.joinpath(barplot_json_path.name)
         )
+
+def checkDataset(dataloader: DataLoader):
+    # iterate through dataloader and log data
+    logging.info(f"len(dataloader): {len(dataloader)}")
+    for batch_idx, batch in enumerate(dataloader):
+        logging.info(f"batch_idx: {batch_idx}")
+        logging.info(f"batch: {batch}")
 
 
 def resize_and_convert(img_path: str) -> None:

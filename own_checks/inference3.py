@@ -11,6 +11,9 @@ from pathlib import Path
 from functools import partial
 import pytorch_lightning as pl
 from subprocess import Popen, PIPE
+
+sys.path.append("/media/sanbingyouyong/Ray/Projects/Research/ProceduralModeling/ASU/GeoCode/geocode/")
+
 from data.dataset_pc import DatasetPC
 from data.dataset_sketch import DatasetSketch
 from geocode.barplot_util import gen_and_save_barplot
@@ -23,7 +26,7 @@ from common.sampling_util import sample_surface
 from common.file_util import load_obj, get_recipe_yml_obj
 from common.point_cloud_util import normalize_point_cloud
 
-sys.path.append("/media/sanbingyouyong/Ray/Projects/Research/ProceduralModeling/ASU/GeoCode/geocode/")
+
 
 
 SINGLE_IMAGE_DATASET_DIR = "./datasets/SingleImg"
@@ -114,7 +117,7 @@ def gc_single_image_inference(single_img_dataset_dir=SINGLE_IMAGE_DATASET_DIR, p
                                         test_dataloaders_types=test_dataloaders_types, test_input_type=[InputType.sketch],
                                         exp_name=exp_name)
     # print model summary in human readable format
-    print(pl_model.summarize("full", 5))
+    # print(pl_model.summarize("full", 5))
 
     trainer = pl.Trainer(gpus=1)
     trainer.test(model=pl_model, dataloaders=test_dataloaders, ckpt_path=best_model_and_highest_epoch)
