@@ -131,8 +131,9 @@ def del_obj(obj):
 
 def refresh_obj_in_viewport(obj):
     # the following two line cause the object to update according to the new geometric nodes input
-    obj.show_bounds = not obj.show_bounds
-    obj.show_bounds = not obj.show_bounds
+    # obj.show_bounds = not obj.show_bounds
+    # obj.show_bounds = not obj.show_bounds
+    obj.data.update()
 
 
 def select_objs(*objs):

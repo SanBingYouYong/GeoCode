@@ -6,8 +6,8 @@ from common.file_util import get_recipe_yml_obj
 
 # recipe_file_path = "./datasets/ChairLess/recipe.yml"
 # recipe_file_path = "./datasets/SingleImg/recipe.yml"
-# recipe_file_path = "./datasets/SingleImgVase/recipe.yml"
-recipe_file_path = "./datasets/SingleImgTable/recipe.yml"
+recipe_file_path = "./datasets/SingleImgVase/recipe.yml"
+# recipe_file_path = "./datasets/SingleImgTable/recipe.yml"
 # shape_yml_path = "./blends/inference_out.yml"
 # shape_yml_path = "./datasets/ChairDataset/test/results_exp_geocode_chair/yml_predictions_sketch/chair_back_frame_mid_y_offset_pct_0_0000_0000_-30.0_55.0_pred_sketch.yml"
 # shape_yml_path = "./datasets/ChairDataset/test/results_exp_geocode_chair/yml_gt/chair_back_frame_mid_y_offset_pct_0_0000_0000_gt.yml"
@@ -21,7 +21,8 @@ recipe_file_path = "./datasets/SingleImgTable/recipe.yml"
 shape_yml_path = "./datasets/SingleImgVase/test/results_exp_geocode_vase/yml_predictions_sketch/single_img_-30.0_15.0_pred_sketch.yml"
 
 # table
-shape_yml_path = "./datasets/SingleImgTable/test/results_exp_geocode_table/yml_predictions_sketch/single_img_-30.0_15.0_pred_sketch.yml"
+# shape_yml_path = "./datasets/SingleImgTable/test/yml_gt/single_img.yml"
+# shape_yml_path = "./datasets/SingleImgTable/test/results_exp_geocode_table/yml_predictions_sketch/single_img_-30.0_15.0_pred_sketch.yml"
 
 
 # check if ymls exists
@@ -38,3 +39,6 @@ recipe_yml = get_recipe_yml_obj(recipe_file_path)  # this might be where denorm 
 input_params_map = get_input_param_map(mod, recipe_yml)
 # print(f"Input params map: {input_params_map}")
 load_shape_from_yml(shape_yml_path, input_params_map)
+
+# update the object in the viewport
+obj.data.update()  # works?!  # replaced into bpy_util 134-136
