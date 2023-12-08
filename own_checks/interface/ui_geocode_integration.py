@@ -7,22 +7,6 @@ import importlib
 
 from bpy.types import Context
 
-# from own_checks.inference.inference3 import gc_single_image_inference
-
-# from pathlib import Path
-# def import_parents(level=1):
-#     global __package__
-#     file = Path(__file__).resolve()
-#     parent, top = file.parent, file.parents[level]
-#     sys.path.append(str(top))
-#     try:
-#         sys.path.remove(str(parent))
-#     except ValueError:
-#         pass
-#     __package__ = '.'.join(parent.parts[len(top.parts):])
-#     importlib.import_module(__package__)
-# import_parents(level=1)
-
 from PIL import Image
 
 sys.path.append("/media/sanbingyouyong/Ray/Projects/Research/ProceduralModeling/ASU/GeoCode/geocode/")
@@ -52,15 +36,7 @@ import logging
 
 from own_checks.inference_methods import GCDomain, gc_single_image_inference_entrypoint
 from own_checks.param2obj_methods import param2obj_entrypoint
-
-
-
-def checkDataset(dataloader: DataLoader):
-    # iterate through dataloader and log data
-    logging.info(f"len(dataloader): {len(dataloader)}")
-    for batch_idx, batch in enumerate(dataloader):
-        logging.info(f"batch_idx: {batch_idx}")
-        logging.info(f"batch: {batch}")
+from own_checks.gc_domain import GCDomain
 
 
 def resize_and_convert(img_path: str) -> None:
@@ -85,20 +61,38 @@ class CaptureAnnotationOperator(bpy.types.Operator):
     def execute(self, context: Context):
         print("You've called Capture Annotation & GeoCode Inference.")
 
-        # hide "procedural shape"
-        bpy.data.objects["procedural shape"].hide_viewport = True
+        # get domain
+        scene = context.scene
+        domain = scene.geocode_domain_options
+        img_path = None
+        obj = None
+        if domain == "CHAIR":
+            domain = GCDomain.CHAIR
+            img_path = "./datasets/SingleImgChair/test/sketches/single_img_-30.0_15.0.png"
+            obj = bpy.data.objects["procedural chair"]
+        elif domain == "TABLE":
+            domain = GCDomain.TABLE
+            img_path = "./datasets/SingleImgTable/test/sketches/single_img_-30.0_15.0.png"
+            obj = bpy.data.objects["procedural table"]
+        elif domain == "VASE":
+            domain = GCDomain.VASE
+            img_path = "./datasets/SingleImgVase/test/sketches/single_img_-30.0_15.0.png"
+            obj = bpy.data.objects["procedural vase"]
+        else:
+            raise Exception(f"Unknown domain [{domain}]")
 
-        scene: bpy.types.Scene = context.scene
-        img_path = "./datasets/SingleImg/test/sketches/single_img_-30.0_15.0.png"
+        # hide "procedural shape"
+        obj.hide_viewport = True
+
         bpy.context.scene.render.filepath = img_path
         bpy.ops.render.opengl(write_still=True)
         resize_and_convert(img_path)
 
-        gc_single_image_inference_entrypoint(GCDomain.CHAIR)
-        param2obj_entrypoint(GCDomain.CHAIR)
+        gc_single_image_inference_entrypoint(domain)
+        param2obj_entrypoint(domain, obj)
 
         # bring it back in
-        bpy.data.objects["procedural shape"].hide_viewport = False
+        obj.hide_viewport = False
         return {"FINISHED"}
 
 
@@ -126,6 +120,7 @@ class GeoCodeInterfacePanel(bpy.types.Panel):
         scene = context.scene
         # add elements to ui
         # layout.prop(scene, "annotation_image_path")
+        layout.prop(scene, "geocode_domain_options", text="GeoCode Domain")
         layout.prop(scene, "slider_value", text="View Angle")
         layout.operator("object.capture_annotation_operator")
         layout.operator("object.clear_all_annotation_operator")
@@ -141,6 +136,19 @@ def update_slider_value(self, context):
     )
     print("updated camera rotation")
 
+def update_geocode_domain_options(self, context):
+    selected_domain = context.scene.geocode_domain_options
+
+    # Hide all objects initially
+    for obj in bpy.data.objects:
+        obj.hide_viewport = True
+
+    # Show the corresponding object based on the selected domain
+    object_name = f"procedural {selected_domain.lower()}"
+    if object_name in bpy.data.objects:
+        bpy.data.objects[object_name].hide_viewport = False
+
+
 
 def register():
     # bpy.types.Scene.annotation_image_path: bpy.types.StringProperty = bpy.props.StringProperty(
@@ -152,6 +160,19 @@ def register():
     bpy.types.Scene.slider_value = bpy.props.FloatProperty(
         name="View Angle", default=0.0, min=0.0, max=90.0, update=update_slider_value
     )
+    bpy.types.Scene.geocode_domain_options = bpy.props.EnumProperty(
+        items=[
+            ('CHAIR', 'Chair', 'Select Chair'),
+            ('TABLE', 'Table', 'Select Table'),
+            ('VASE', 'Vase', 'Select Vase')
+            # Add more options as needed
+        ],
+        name='GeoCode Domain',
+        description='Select the GeoCode Domain',
+        default='CHAIR',
+        update=update_geocode_domain_options
+    )
+
 
     bpy.utils.register_class(CaptureAnnotationOperator)
     bpy.utils.register_class(ClearAllAnnotationOperator)
