@@ -96,3 +96,4 @@ def param2obj_actual(recipe_file_path: str, shape_yml_path: str, obj: bpy.types.
     load_shape_from_yml(shape_yml_path, input_params_map, obj)
     # update the object in the viewport
     obj.data.update()
+    # bpy.context.view_layer.update()

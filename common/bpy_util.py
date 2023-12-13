@@ -133,7 +133,8 @@ def refresh_obj_in_viewport(obj):
     # the following two line cause the object to update according to the new geometric nodes input
     # obj.show_bounds = not obj.show_bounds
     # obj.show_bounds = not obj.show_bounds
-    obj.data.update()
+    # obj.data.update()
+    bpy.context.view_layer.update()
 
 
 def select_objs(*objs):
