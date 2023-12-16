@@ -185,3 +185,11 @@ def gc_single_image_inference_actual(
         f"Average inference time for [{pl_model.num_inferred_samples}] samples is [{avg_inference_time:.3f}]"
     )
 
+
+if __name__ == "__main__":
+    gc_single_image_inference_actual(
+        single_img_dataset_dir=TABLE_DATASET_DIR,
+        exp_name=EXP_TABLE_NAME,
+        phase=PHASE,
+        models_dir=MODELS_DIR
+    )
