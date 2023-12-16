@@ -146,6 +146,11 @@ class GeoCodeInterfacePanel(bpy.types.Panel):
 
         layout.prop(scene, "geocode_domain_options", text="GeoCode Domain")
         layout.prop(scene, "slider_value", text="View Angle")
+
+        # Toggle to show/hide the current shape
+        row = layout.row()
+        row.prop(scene, "show_current_shape", text="Show Current Shape")
+
         layout.operator("object.capture_annotation_operator")
         layout.operator("object.clear_all_annotation_operator")
 
@@ -204,6 +209,14 @@ def update_background_image_opacity(self, context):
     # Update the camera background image opacity when the opacity is changed
     update_camera_background_opacity(context)
 
+def update_show_current_shape(self, context):
+    # Update the camera background image opacity when the opacity is changed
+    scene = context.scene
+    selected_domain = scene.geocode_domain_options
+    object_name = f"procedural {selected_domain.lower()}"
+    if object_name in bpy.data.objects:
+        bpy.data.objects[object_name].hide_viewport = not scene.show_current_shape
+
 
 
 
@@ -245,6 +258,13 @@ def register():
         description="Opacity of the background image in camera view",
         update=update_background_image_opacity
     )
+    bpy.types.Scene.show_current_shape = bpy.props.BoolProperty(
+        name="Show Current Shape",
+        default=True,
+        description="Toggle to show/hide the current shape in the viewport",
+        update=update_show_current_shape
+)
+
 
 
 
