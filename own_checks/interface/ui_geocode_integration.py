@@ -107,6 +107,17 @@ class ClearAllAnnotationOperator(bpy.types.Operator):
             annotation_layer.clear()
         return {"FINISHED"}
 
+class ClearBackgroundImageOperator(bpy.types.Operator):
+    bl_idname = "object.clear_background_image_operator"
+    bl_label = "Clear Background Image"
+
+    def execute(self, context: Context):
+        print("You've called Clear Background Image.")
+        context.scene.background_image_path = ""  # Clear the background image path
+        update_camera_background_image(context)  # Update the camera background image
+        return {"FINISHED"}
+
+
 
 class GeoCodeInterfacePanel(bpy.types.Panel):
     bl_label = "GeoCode Interface Panel"
@@ -118,8 +129,21 @@ class GeoCodeInterfacePanel(bpy.types.Panel):
     def draw(self, context: Context):
         layout = self.layout
         scene = context.scene
-        # add elements to ui
-        # layout.prop(scene, "annotation_image_path")
+
+        # Check if in camera view
+        if context.space_data.camera is not None:
+            # Background image path input
+            row = layout.row()
+            row.prop(scene, "background_image_path", text="Background Image")
+
+            # Background image opacity slider
+            row = layout.row()
+            row.prop(scene, "background_image_opacity", text="Opacity")
+
+            # Clear background image button
+            row = layout.row()
+            row.operator("object.clear_background_image_operator", text="Clear Background Image")
+
         layout.prop(scene, "geocode_domain_options", text="GeoCode Domain")
         layout.prop(scene, "slider_value", text="View Angle")
         layout.operator("object.capture_annotation_operator")
@@ -147,6 +171,39 @@ def update_geocode_domain_options(self, context):
     object_name = f"procedural {selected_domain.lower()}"
     if object_name in bpy.data.objects:
         bpy.data.objects[object_name].hide_viewport = False
+    
+    # Still show camera for background image
+    bpy.data.objects["Camera"].hide_viewport = False
+
+def update_camera_background_image(context):
+    camera = context.space_data.camera
+    if camera is not None:
+        # Set the background image for the camera
+        camera.data.background_images.clear()
+        if context.scene.background_image_path != "":
+            camera.data.show_background_images = True
+            bg_img = camera.data.background_images.new()
+            bg_img.image = bpy.data.images.load(context.scene.background_image_path)
+            bg_img.alpha = context.scene.background_image_opacity
+        else:
+            camera.data.show_background_images = False
+
+def update_camera_background_opacity(context):
+    camera = context.space_data.camera
+    if camera is not None:
+        # Update the background image opacity for the camera
+        for bg_img in camera.data.background_images:
+            bg_img.alpha = context.scene.background_image_opacity
+
+
+def update_background_image_path(self, context):
+    # Update the camera background image when the path is changed
+    update_camera_background_image(context)
+
+def update_background_image_opacity(self, context):
+    # Update the camera background image opacity when the opacity is changed
+    update_camera_background_opacity(context)
+
 
 
 
@@ -172,11 +229,29 @@ def register():
         default='CHAIR',
         update=update_geocode_domain_options
     )
+    bpy.types.Scene.background_image_path = bpy.props.StringProperty(
+        name="Background Image Path",
+        subtype='FILE_PATH',
+        default="",
+        description="Path to the background image for reference in camera view",
+        update=update_background_image_path
+    )
+
+    bpy.types.Scene.background_image_opacity = bpy.props.FloatProperty(
+        name="Background Image Opacity",
+        default=1.0,
+        min=0.0,
+        max=1.0,
+        description="Opacity of the background image in camera view",
+        update=update_background_image_opacity
+    )
+
 
 
     bpy.utils.register_class(CaptureAnnotationOperator)
     bpy.utils.register_class(ClearAllAnnotationOperator)
     bpy.utils.register_class(GeoCodeInterfacePanel)
+    bpy.utils.register_class(ClearBackgroundImageOperator)
 
 
 def unregister():
@@ -185,6 +260,7 @@ def unregister():
     bpy.utils.unregister_class(CaptureAnnotationOperator)
     bpy.utils.unregister_class(ClearAllAnnotationOperator)
     bpy.utils.unregister_class(GeoCodeInterfacePanel)
+    bpy.utils.unregister_class(ClearBackgroundImageOperator)
 
 
 if __name__ == "__main__":
