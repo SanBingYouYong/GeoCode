@@ -83,6 +83,8 @@ class CaptureAnnotationOperator(bpy.types.Operator):
 
         # hide "procedural shape"
         obj.hide_viewport = True
+        # hide camera (and its background image)
+        bpy.data.objects["Camera"].hide_viewport = True
 
         bpy.context.scene.render.filepath = img_path
         bpy.ops.render.opengl(write_still=True)
@@ -93,6 +95,7 @@ class CaptureAnnotationOperator(bpy.types.Operator):
 
         # bring it back in
         obj.hide_viewport = False
+        bpy.data.objects["Camera"].hide_viewport = False
         return {"FINISHED"}
 
 
