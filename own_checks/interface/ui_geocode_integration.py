@@ -120,6 +120,16 @@ class ClearBackgroundImageOperator(bpy.types.Operator):
         update_camera_background_image(context)  # Update the camera background image
         return {"FINISHED"}
 
+class SwitchToCameraViewOperator(bpy.types.Operator):
+    bl_idname = "object.switch_to_camera_view_operator"
+    bl_label = "Switch to Camera View"
+
+    def execute(self, context: Context):
+        print("You've called Switch to Camera View.")
+        # bpy.ops.view3d.viewnumpad(type="CAMERA")
+        bpy.ops.view3d.view_camera()
+        return {"FINISHED"}
+
 
 
 class GeoCodeInterfacePanel(bpy.types.Panel):
@@ -133,21 +143,25 @@ class GeoCodeInterfacePanel(bpy.types.Panel):
         layout = self.layout
         scene = context.scene
 
-        # Check if in camera view
-        if context.space_data.camera is not None:
-            # Background image path input
-            row = layout.row()
-            row.prop(scene, "background_image_path", text="Background Image")
-
-            # Background image opacity slider
-            row = layout.row()
-            row.prop(scene, "background_image_opacity", text="Opacity")
-
-            # Clear background image button
-            row = layout.row()
-            row.operator("object.clear_background_image_operator", text="Clear Background Image")
-
         layout.prop(scene, "geocode_domain_options", text="GeoCode Domain")
+
+        # Background image path input
+        row = layout.row()
+        row.prop(scene, "background_image_path", text="Background Image")
+
+        # Background image opacity slider
+        row = layout.row()
+        row.prop(scene, "background_image_opacity", text="Opacity")
+
+        # Clear background image button
+        row = layout.row()
+        row.operator("object.clear_background_image_operator", text="Clear Background Image")
+
+        # switch to camera view
+        row = layout.row()
+        row.operator("object.switch_to_camera_view_operator", text="Switch to Camera View")
+
+        
         layout.prop(scene, "slider_value", text="View Angle")
 
         # Toggle to show/hide the current shape
@@ -275,6 +289,7 @@ def register():
     bpy.utils.register_class(ClearAllAnnotationOperator)
     bpy.utils.register_class(GeoCodeInterfacePanel)
     bpy.utils.register_class(ClearBackgroundImageOperator)
+    bpy.utils.register_class(SwitchToCameraViewOperator)
 
 
 def unregister():
@@ -284,6 +299,7 @@ def unregister():
     bpy.utils.unregister_class(ClearAllAnnotationOperator)
     bpy.utils.unregister_class(GeoCodeInterfacePanel)
     bpy.utils.unregister_class(ClearBackgroundImageOperator)
+    bpy.utils.unregister_class(SwitchToCameraViewOperator)
 
 
 if __name__ == "__main__":
