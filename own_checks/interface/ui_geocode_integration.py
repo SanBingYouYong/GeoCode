@@ -120,13 +120,12 @@ class ClearBackgroundImageOperator(bpy.types.Operator):
         update_camera_background_image(context)  # Update the camera background image
         return {"FINISHED"}
 
-class SwitchToCameraViewOperator(bpy.types.Operator):
-    bl_idname = "object.switch_to_camera_view_operator"
-    bl_label = "Switch to Camera View"
+class ToggleCameraViewOperator(bpy.types.Operator):
+    bl_idname = "object.toggle_camera_view_operator"
+    bl_label = "Toggle Camera View"
 
     def execute(self, context: Context):
-        print("You've called Switch to Camera View.")
-        # bpy.ops.view3d.viewnumpad(type="CAMERA")
+        print("You've called Toggle Camera View.")
         bpy.ops.view3d.view_camera()
         return {"FINISHED"}
 
@@ -143,33 +142,29 @@ class GeoCodeInterfacePanel(bpy.types.Panel):
         layout = self.layout
         scene = context.scene
 
-        layout.prop(scene, "geocode_domain_options", text="GeoCode Domain")
+        box = layout.box()
+        box.label(text="GeoCode")
+        box.prop(scene, "geocode_domain_options", text="GeoCode Domain")
+        box.operator("object.capture_annotation_operator")
 
-        # Background image path input
-        row = layout.row()
-        row.prop(scene, "background_image_path", text="Background Image")
-
-        # Background image opacity slider
-        row = layout.row()
-        row.prop(scene, "background_image_opacity", text="Opacity")
-
-        # Clear background image button
-        row = layout.row()
-        row.operator("object.clear_background_image_operator", text="Clear Background Image")
-
-        # switch to camera view
-        row = layout.row()
-        row.operator("object.switch_to_camera_view_operator", text="Switch to Camera View")
-
-        
-        layout.prop(scene, "slider_value", text="View Angle")
-
+        box = layout.box()
+        box.label(text="View")
         # Toggle to show/hide the current shape
-        row = layout.row()
-        row.prop(scene, "show_current_shape", text="Show Current Shape")
+        box.prop(scene, "show_current_shape", text="Show Current Shape")
+        box.prop(scene, "slider_value", text="View Angle")
+        # switch to camera view
+        box.operator("object.toggle_camera_view_operator", text="Toggle Camera View")
+        box.operator("object.clear_all_annotation_operator")
 
-        layout.operator("object.capture_annotation_operator")
-        layout.operator("object.clear_all_annotation_operator")
+        box = layout.box()
+        box.label(text="Background Image")
+        box.prop(scene, "show_background_image", text="Show Background Image")
+        # Background image path input
+        box.prop(scene, "background_image_path", text="Background Image")
+        # Background image opacity slider
+        box.prop(scene, "background_image_opacity", text="Opacity")
+        # Clear background image button
+        box.operator("object.clear_background_image_operator", text="Clear Background Image")
 
 
 def update_slider_value(self, context):
@@ -227,12 +222,18 @@ def update_background_image_opacity(self, context):
     update_camera_background_opacity(context)
 
 def update_show_current_shape(self, context):
-    # Update the camera background image opacity when the opacity is changed
+    # Update the visibility of the current shape
     scene = context.scene
     selected_domain = scene.geocode_domain_options
     object_name = f"procedural {selected_domain.lower()}"
     if object_name in bpy.data.objects:
         bpy.data.objects[object_name].hide_viewport = not scene.show_current_shape
+
+def update_show_background_image(self, context):
+    # Update whether camera background image is shown
+    camera = context.space_data.camera
+    if camera is not None:
+        camera.data.show_background_images = context.scene.show_background_image
 
 
 
@@ -280,7 +281,13 @@ def register():
         default=True,
         description="Toggle to show/hide the current shape in the viewport",
         update=update_show_current_shape
-)
+    )
+    bpy.types.Scene.show_background_image = bpy.props.BoolProperty(
+        name="Show Background Image",
+        default=True,
+        description="Toggle to show/hide the background image in the viewport",
+        update=update_show_background_image
+    )
 
 
 
@@ -289,7 +296,7 @@ def register():
     bpy.utils.register_class(ClearAllAnnotationOperator)
     bpy.utils.register_class(GeoCodeInterfacePanel)
     bpy.utils.register_class(ClearBackgroundImageOperator)
-    bpy.utils.register_class(SwitchToCameraViewOperator)
+    bpy.utils.register_class(ToggleCameraViewOperator)
 
 
 def unregister():
@@ -299,7 +306,7 @@ def unregister():
     bpy.utils.unregister_class(ClearAllAnnotationOperator)
     bpy.utils.unregister_class(GeoCodeInterfacePanel)
     bpy.utils.unregister_class(ClearBackgroundImageOperator)
-    bpy.utils.unregister_class(SwitchToCameraViewOperator)
+    bpy.utils.unregister_class(ToggleCameraViewOperator)
 
 
 if __name__ == "__main__":
