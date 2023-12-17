@@ -39,15 +39,16 @@ from own_checks.param2obj_methods import param2obj_entrypoint
 from own_checks.gc_domain import GCDomain
 
 
-def resize_and_convert(img_path: str) -> None:
+def resize_and_convert(img_path: str, invert=True) -> None:
     # Open an image
     image = Image.open(img_path)
     # Resize the image (e.g., to 300x300 pixels)
     resized_image = image.resize((224, 224))
     # convert to grayscale and save as RGB
     binarized_image = resized_image.convert("L")
-    # invert the image
-    binarized_image = Image.eval(binarized_image, lambda x: 255 - x)
+    if invert:
+        # invert the image
+        binarized_image = Image.eval(binarized_image, lambda x: 255 - x)
     # convert back to RGB
     binarized_image = binarized_image.convert("RGB")
     binarized_image.save(img_path)
@@ -129,6 +130,40 @@ class ToggleCameraViewOperator(bpy.types.Operator):
         bpy.ops.view3d.view_camera()
         return {"FINISHED"}
 
+class ImageInferenceOperator(bpy.types.Operator):
+    bl_idname = "object.image_inference_operator"
+    bl_label = "Image Inference"
+
+    def execute(self, context: Context):
+        print("You've called Image Inference.")
+        # copy paste background image to corresponding dataset of domain
+        scene = context.scene
+        domain = scene.geocode_domain_options
+        img_path = None
+        obj = None
+        if domain == "CHAIR":
+            domain = GCDomain.CHAIR
+            img_path = "./datasets/SingleImgChair/test/sketches/single_img_-30.0_15.0.png"
+            obj = bpy.data.objects["procedural chair"]
+        elif domain == "TABLE":
+            domain = GCDomain.TABLE
+            img_path = "./datasets/SingleImgTable/test/sketches/single_img_-30.0_15.0.png"
+            obj = bpy.data.objects["procedural table"]
+        elif domain == "VASE":
+            domain = GCDomain.VASE
+            img_path = "./datasets/SingleImgVase/test/sketches/single_img_-30.0_15.0.png"
+            obj = bpy.data.objects["procedural vase"]
+        else:
+            raise Exception(f"Unknown domain [{domain}]")
+        # translate background image path to path that shutil recognise
+        img_path = bpy.path.abspath(img_path)
+        inf_img_path = bpy.path.abspath(scene.background_image_path)
+        shutil.copyfile(inf_img_path, img_path)
+        resize_and_convert(img_path, invert=not scene.proper_background_image)
+        gc_single_image_inference_entrypoint(domain)
+        param2obj_entrypoint(domain, obj)
+        return {"FINISHED"}
+
 
 
 class GeoCodeInterfacePanel(bpy.types.Panel):
@@ -165,6 +200,11 @@ class GeoCodeInterfacePanel(bpy.types.Panel):
         box.prop(scene, "background_image_opacity", text="Opacity")
         # Clear background image button
         box.operator("object.clear_background_image_operator", text="Clear Background Image")
+        # use a pre-saved image to inference
+        box.label(text="Use This Image For Inference")
+        box.prop(scene, "proper_background_image", text="Image is Processed Already")
+        # Inference button
+        box.operator("object.image_inference_operator", text="Image Inference")
 
 
 def update_slider_value(self, context):
@@ -288,6 +328,11 @@ def register():
         description="Toggle to show/hide the background image in the viewport",
         update=update_show_background_image
     )
+    bpy.types.Scene.proper_background_image = bpy.props.BoolProperty(
+        name="Proper Background Image",
+        default=True,
+        description="Whether the background image is a properly processed image or a sketch straight from datasets",
+    )
 
 
 
@@ -297,6 +342,7 @@ def register():
     bpy.utils.register_class(GeoCodeInterfacePanel)
     bpy.utils.register_class(ClearBackgroundImageOperator)
     bpy.utils.register_class(ToggleCameraViewOperator)
+    bpy.utils.register_class(ImageInferenceOperator)
 
 
 def unregister():
@@ -307,6 +353,7 @@ def unregister():
     bpy.utils.unregister_class(GeoCodeInterfacePanel)
     bpy.utils.unregister_class(ClearBackgroundImageOperator)
     bpy.utils.unregister_class(ToggleCameraViewOperator)
+    bpy.utils.unregister_class(ImageInferenceOperator)
 
 
 if __name__ == "__main__":
