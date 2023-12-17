@@ -192,7 +192,9 @@ def update_geocode_domain_options(self, context):
     # Still show camera for background image
     bpy.data.objects["Camera"].hide_viewport = False
 
-def update_camera_background_image(context):
+
+def update_background_image_path(self, context):
+    # Update the camera background image when the path is changed
     camera = context.space_data.camera
     if camera is not None:
         # Set the background image for the camera
@@ -205,21 +207,13 @@ def update_camera_background_image(context):
         else:
             camera.data.show_background_images = False
 
-def update_camera_background_opacity(context):
+def update_background_image_opacity(self, context):
+    # Update the camera background image opacity when the opacity is changed
     camera = context.space_data.camera
     if camera is not None:
         # Update the background image opacity for the camera
         for bg_img in camera.data.background_images:
             bg_img.alpha = context.scene.background_image_opacity
-
-
-def update_background_image_path(self, context):
-    # Update the camera background image when the path is changed
-    update_camera_background_image(context)
-
-def update_background_image_opacity(self, context):
-    # Update the camera background image opacity when the opacity is changed
-    update_camera_background_opacity(context)
 
 def update_show_current_shape(self, context):
     # Update the visibility of the current shape
